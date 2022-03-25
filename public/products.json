@@ -1,0 +1,83 @@
+[
+    {
+      "id": "1",
+      "name": "JavaScript: The Definitive Guide, 7th Edition",
+      "price": 32.49,
+      "ratings": 5,
+      "img": "https://i.ibb.co/WFp6W2g/js.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "2",
+      "name": "Learning Node: Moving to the Server-Side",
+      "price": 29.56,
+      "ratings": 4.5,
+      "img": "https://i.ibb.co/2cbWnqD/node.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "3",
+      "name": "Learning Python",
+      "price": 56.16,
+      "ratings": 4.9,
+      "img": "https://i.ibb.co/097fqLS/python.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "4",
+      "name": "MongoDB: The Definitive Guide",
+      "price": 26.14,
+      "ratings": 4.8,
+      "img": "https://i.ibb.co/Db6Z6gL/mongodb.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "5",
+      "name": "HTML and CSS: Design and Build Websites",
+      "price": 15.91,
+      "ratings": 4.7,
+      "img": "https://i.ibb.co/mrnkD8b/html.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "6",
+      "name": "Mastering Django",
+      "price": 49.00,
+      "ratings": 4.7,
+      "img": "https://i.ibb.co/9gLx6dx/django.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "7",
+      "name": "Beginning Git and GitHub",
+      "price": 26.99,
+      "ratings": 4.9,
+      "img": "https://i.ibb.co/b1QCH5M/git.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "8",
+      "name": "The Ruby Programming Language",
+      "price": 23.49,
+      "ratings": 4.8,
+      "img": "https://i.ibb.co/19ndpkP/ruby.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "9",
+      "name": "Learning React Native",
+      "price": 49.08,
+      "ratings": 4.9,
+      "img": "https://i.ibb.co/QCjLf6Y/reactnative.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "10",
+      "name": "The Road to React",
+      "price": 29.99,
+      "ratings": 5,
+      "img": "https://i.ibb.co/bRyGk8V/react.jpg",
+      "quantity": 0
+    }
+    
+  ]
