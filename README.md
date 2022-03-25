@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Boi Bicitra
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site Link [Boi Bicitra](https://boi-bicitra.netlify.app/).
 
 ## Available Scripts
 
