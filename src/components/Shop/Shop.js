@@ -7,6 +7,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cardData, setCardData] = useState([]);
+    
     useEffect(()=>{
         fetch('products.json')
         .then(res => res.json())
@@ -33,6 +34,7 @@ const Shop = () => {
         
         
     }
+    
 
     return (
         <div className="row m-0">

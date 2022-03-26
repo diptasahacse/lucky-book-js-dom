@@ -3,7 +3,8 @@ import React from 'react';
 import { faRemove } from '@fortawesome/free-solid-svg-icons';
 import './MakeItem.css'
 const MakeItem = ({element}) => {
-    const {id,name,img} = element;
+    
+    const {name,img} = element;
     return(
         <div className='d-flex mt-2 list-item-parent align-items-center justify-content-between'>
             <div className='d-flex align-items-center'>
