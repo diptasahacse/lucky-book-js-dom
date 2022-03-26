@@ -57,9 +57,9 @@ const Shop = () => {
 
     return (
         <div className="row m-0">
-                <div className="col-12 col-md-9 products-section">
+                <div className="col-12 col-lg-9 products-section">
                     <h2 className='products-section-title'>All Books</h2>
-                    <div className='row row-cols-1 row-cols-md-3 g-4'>
+                    <div className='row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4'>
                         {
                             products.map(product => <BookCard key={product.id} product={product} clickHandler={clickHandler}></BookCard>)
 
@@ -67,7 +67,7 @@ const Shop = () => {
 
                     </div>
                 </div>
-                <div className="col-md-3 col-12">
+                <div className="col-lg-3 col-12">
                     <SelectedBook randValue={randValue} randomBookHandler={randomBookHandler} chooseAgainHandler={chooseAgainHandler} cardData={cardData}></SelectedBook>
                 </div>
         </div>

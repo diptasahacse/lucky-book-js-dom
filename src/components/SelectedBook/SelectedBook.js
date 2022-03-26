@@ -40,7 +40,7 @@ const LuckyBook = ({randomBook})=>{
     
     return(
         <div className='border border-3 p-2'>
-            <h5>Lucky Book</h5>
+            <h5>Lucky Book For You</h5>
             <div className='list-item-parent mt-3'>
                 <div className='d-flex align-items-center'>
                     <div>
