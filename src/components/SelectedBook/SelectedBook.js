@@ -1,25 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './SelectedBook.css'
 import MakeItem from '../MakeItem/MakeItem';
-const SelectedBook = ({cardData}) => {
-    const [randValue,setRandValue] =  useState(-1)
-    const chooseAgainHandler = ()=>{
-        const cartLength = cardData.length;
-        if(cartLength === 0){
-            setRandValue(-1)
-
-        }
-        else{
-            const randValue = Math.floor(Math.random() * cartLength) + 1;
-            setRandValue(randValue)
-
-        }
-        
-    }
-
-    
-    
-
+const SelectedBook = ({cardData,chooseAgainHandler,randValue,randomBookHandler}) => {
     return (
         <div className='selected-book-section mt-4'>
             <h4>Selected Books</h4>
@@ -28,18 +10,22 @@ const SelectedBook = ({cardData}) => {
                     cardData.map(element => <MakeItem key={element.id} element={element}></MakeItem>)
                 }
             </div>
-            <div className={randValue !== -1?"p-2":"d-none"}>
+            <div className={randValue !== -1 && cardData.length !==0 ?"p-2":"d-none"}>
                 {
+                    
                     randValue === -1 ? <p></p> : <LuckyBook randonBook={cardData[randValue-1]} ></LuckyBook>
 
                     
+                }
+                {
+                    console.log(randValue,cardData.length)
                 }
 
             </div>
             <div className='my-4'>
                 <div className='d-flex justify-content-between'>
-                    <button onClick={chooseAgainHandler} className='btn btn-primary btn-sm'>Choose 1 For Me</button>
-                    <button className='btn btn-danger btn-sm'>Choose again</button>
+                    <button onClick={randomBookHandler} className='btn btn-primary btn-sm'>Choose 1 For Me</button>
+                    <button onClick={chooseAgainHandler} className='btn btn-danger btn-sm'>Choose again</button>
                 </div>
                 
             </div>
@@ -48,7 +34,9 @@ const SelectedBook = ({cardData}) => {
 };
 
 const LuckyBook = ({randonBook})=>{
-    const {name,img} = randonBook;
+    
+    const name = randonBook?.name;
+    const img = randonBook?.img;
     
     return(
         <div className='border border-3 p-2'>

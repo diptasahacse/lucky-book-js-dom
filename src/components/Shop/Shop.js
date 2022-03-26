@@ -7,6 +7,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cardData, setCardData] = useState([]);
+    const [randValue,setRandValue] =  useState(-1)
     
     useEffect(()=>{
         fetch('products.json')
@@ -34,6 +35,24 @@ const Shop = () => {
         
         
     }
+    const randomBookHandler = ()=>{
+        const cartLength = cardData.length;
+        if(cartLength === 0){
+            setRandValue(-1)
+
+        }
+        else{
+            const randValue = Math.floor(Math.random() * cartLength) + 1;
+            setRandValue(randValue)
+
+        }
+        
+    }
+    const chooseAgainHandler = ()=>{
+        setCardData([])
+        setRandValue(-1)
+
+    }
     
 
     return (
@@ -49,7 +68,7 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className="col-md-3 col-12">
-                    <SelectedBook cardData={cardData}></SelectedBook>
+                    <SelectedBook randValue={randValue} randomBookHandler={randomBookHandler} chooseAgainHandler={chooseAgainHandler} cardData={cardData}></SelectedBook>
                 </div>
         </div>
     );
