@@ -10,10 +10,10 @@ const SelectedBook = ({cardData,chooseAgainHandler,randValue,randomBookHandler})
                     cardData.map(element => <MakeItem key={element.id} element={element}></MakeItem>)
                 }
             </div>
-            <div className={randValue !== -1 && cardData.length !==0 ?"p-2":"d-none"}>
+            <div className={randValue !== 0 && cardData.length !==0 ?"p-2":"d-none"}>
                 {
                     
-                    randValue === -1 ? <p></p> : <LuckyBook randonBook={cardData[randValue-1]} ></LuckyBook>
+                    randValue === 0 ? <p></p> : <LuckyBook randomBook={cardData[randValue-1]} ></LuckyBook>
 
                     
                 }
@@ -24,8 +24,8 @@ const SelectedBook = ({cardData,chooseAgainHandler,randValue,randomBookHandler})
             </div>
             <div className='my-4'>
                 <div className='d-flex justify-content-between'>
-                    <button onClick={randomBookHandler} className='btn btn-primary btn-sm'>Choose 1 For Me</button>
-                    <button onClick={chooseAgainHandler} className='btn btn-danger btn-sm'>Choose again</button>
+                    <button onClick={randomBookHandler} className={cardData.length > 0 ? "btn btn-primary btn-sm" : 'd-none'}>Choose 1 For Me</button>
+                    <button onClick={chooseAgainHandler} className={cardData.length > 0 ? "btn btn-danger btn-sm" : 'd-none'}>Choose again</button>
                 </div>
                 
             </div>
@@ -33,10 +33,10 @@ const SelectedBook = ({cardData,chooseAgainHandler,randValue,randomBookHandler})
     );
 };
 
-const LuckyBook = ({randonBook})=>{
+const LuckyBook = ({randomBook})=>{
     
-    const name = randonBook?.name;
-    const img = randonBook?.img;
+    const name = randomBook?.name;
+    const img = randomBook?.img;
     
     return(
         <div className='border border-3 p-2'>

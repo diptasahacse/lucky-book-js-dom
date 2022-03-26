@@ -7,7 +7,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cardData, setCardData] = useState([]);
-    const [randValue,setRandValue] =  useState(-1)
+    const [randValue,setRandValue] =  useState(0)
     
     useEffect(()=>{
         fetch('products.json')
@@ -38,7 +38,7 @@ const Shop = () => {
     const randomBookHandler = ()=>{
         const cartLength = cardData.length;
         if(cartLength === 0){
-            setRandValue(-1)
+            setRandValue(0)
 
         }
         else{
@@ -50,7 +50,7 @@ const Shop = () => {
     }
     const chooseAgainHandler = ()=>{
         setCardData([])
-        setRandValue(-1)
+        setRandValue(0)
 
     }
     
