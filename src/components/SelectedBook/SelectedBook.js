@@ -1,20 +1,17 @@
 import React from 'react';
 import './SelectedBook.css'
-
+import MakeItem from '../MakeItem/MakeItem';
 const SelectedBook = ({cardData}) => {
-    console.log(cardData)
     return (
         <div className='selected-book-section mt-4'>
-            <h3>Selected Books</h3>
-            <div>
-                
-
+            <h4>Selected Books</h4>
+            <div className='mt-4'>
+                {
+                    cardData.map(element => <MakeItem key={element.id} element={element}></MakeItem>)
+                }
             </div>
-            
-            
         </div>
     );
 };
-
 
 export default SelectedBook;

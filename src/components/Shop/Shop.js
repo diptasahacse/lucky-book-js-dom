@@ -12,18 +12,25 @@ const Shop = () => {
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
-    // useEffect(()=>{
-    //     console.log(cardData)
-        
-        
-        
-    // },[cardData])
 
     const clickHandler = (product)=>{
+        let cardArray = [...cardData];
+        if(cardArray.length > 3){
+            alert("You can not add more than 4")
+
+        }
+        else{
+            const isProductThere = cardArray.find(element => element.id === product.id);
+            if(isProductThere === undefined){
+                cardArray = [...cardData,product];
+                setCardData(cardArray);
+            }
+            else{
+                alert("Already Added")
+            }
+
+        }
         
-
-        console.log(product)
-
         
     }
 
