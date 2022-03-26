@@ -4,8 +4,8 @@
     border-radius: 10px;
 }
 .list-item-img{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     border: 2px solid rgba(0, 9, 128, 0.37);
 }

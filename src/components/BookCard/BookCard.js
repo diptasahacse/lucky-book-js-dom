@@ -9,7 +9,7 @@ const BookCard = ({product,clickHandler}) => {
         <div  className='col'>
             <div className="card border-0 book-card shadow h-100">
                     <div className='card-image-section'>
-                        <img src={img} height="300" className="w-100 " alt={name} />
+                        <img src={img} height="320" className="w-100 " alt={name} />
                     </div>
                     <div className="card-body">
                         <h5 className="card-title">{name}</h5>

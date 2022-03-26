@@ -13,15 +13,6 @@ const MakeItem = ({element}) => {
                 </div>
                 <h6 className='m-0 ms-2'>{name}</h6>
             </div>
-            <button className='border-0 bg-transparent'>
-                <span className='item-remove-icon'>
-                    <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon>
-                    
-                </span>
-
-            </button>
-            
-
         </div>
     );
 };
