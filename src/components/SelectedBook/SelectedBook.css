@@ -1,5 +1,8 @@
 .selected-book-section{
-    background-color: rgba(109, 109, 109, 0.384);
+    background-color: rgb(109 109 109 / 15%);
     border-radius: 10px;
     padding: 5px;
+}
+.selected-book-title{
+    color: #343535;
 }

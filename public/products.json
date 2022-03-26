@@ -78,6 +78,22 @@
       "ratings": 5,
       "img": "https://i.ibb.co/bRyGk8V/react.jpg",
       "quantity": 0
+    },
+    {
+      "id": "11",
+      "name": "Learning Angular",
+      "price": 34.99,
+      "ratings": 4.9,
+      "img": "https://i.ibb.co/txk4GN7/angular.jpg",
+      "quantity": 0
+    },
+    {
+      "id": "12",
+      "name": "Getting to Know Vue.js",
+      "price": 35.44,
+      "ratings": 5,
+      "img": "https://i.ibb.co/VLZGBZC/vue.jpg",
+      "quantity": 0
     }
     
   ]
