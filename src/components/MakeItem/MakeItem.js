@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { faRemove } from '@fortawesome/free-solid-svg-icons';
 import './MakeItem.css'
 const MakeItem = ({element}) => {
     
